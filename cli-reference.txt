@@ -1,4 +1,16 @@
 # Reference for UNIX Commands
-echo: to print something
-man: to view manual. If another word is added, it will give you description of the word.
 
+## Commands
+echo <string>:		Print string to screen
+man <command>:		Display manual page for command
+⌃C:			Get out of trouble
+⌃A:			Move to beginning of line	
+⌃E:			Move to end of line	
+⌃U:			Delete to beginning of line	
+Option-click:		Move cursor to location clicked	
+Up/down arrow:		Scroll through previous commands	
+clear or ⌃L:		Clear screen
+exit or ⌃D:		Exit terminal
+echo "str" >> <file>:	appends a string to a specified file
+
+diff: compares files that are similar
