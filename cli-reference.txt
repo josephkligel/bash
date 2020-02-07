@@ -1,0 +1,4 @@
+# Reference for UNIX Commands
+echo: to print something
+man: to view manual. If another word is added, it will give you description of the word.
+
