@@ -12,5 +12,12 @@ Up/down arrow:		Scroll through previous commands
 clear or ⌃L:		Clear screen
 exit or ⌃D:		Exit terminal
 echo "str" >> <file>:	appends a string to a specified file
-
+echo "str" > <file>:	appends a string to a newly created file
 diff: compares files that are similar
+ls: lists the files in current directory. -a shows all files, -1 shows simple list, -l shows read write capabilities of files, -rtl for list by reversed time of modification long format
+touch: create an empty file
+cd: change directory
+*: wildcard operator. Examples are 's*' to find all the files or directories that start with the letter s, and '*.txt' to list all the files or directories that have a .txt extention
+mv, cp: mv to rename a file or move it to a new location, and cp to copy a file
+rm: to remove a file. -f to force, -r to remove directory
+pwd: print current working directory
