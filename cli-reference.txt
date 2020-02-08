@@ -13,25 +13,41 @@ clear or ⌃L:		Clear screen
 exit or ⌃D:		Exit terminal
 echo "str" >> <file>:	appends a string to a specified file
 echo "str" > <file>:	appends a string to a newly created file
-diff: compares files that are similar
-ls: lists the files in current directory. -a shows all files, -1 shows simple list, -l shows read write capabilities of files, -rtl for list by reversed time of modification long format, -h for human-readable version of list, -ahrtl for reverse, modified, human-readable, all list
-touch: create an empty file
-cd: change directory
-*: wildcard operator. Examples are 's*' to find all the files or directories that start with the letter s, and '*.txt' to list all the files or directories that have a .txt extention
-mv, cp: mv to rename a file or move it to a new location, and cp to copy a file
-rm: to remove a file. -f to force, -r to remove directory
-pwd: print current working directory
-which: looks to see if a program is available at the command line
-curl: download a file using a web address
-!!: run the previous command exactly as written
-!*: run the previous command that starts with a certain letter or word. '*' represents a letter, any letter, or a command word
-^R: search previous commands interactively
-head: shows first 10 lines of file
-tail: shows last 10 lines of file. -f allows you view an actively changing file.
-wc: wordcount of file. From left to right, the output is lines, words, and bytes.
-|: pipe is used for piping the results of another command
-ping: sees if a server is working. The argument is a web address.
-less: lets you navigate through a file
+diff: 			compares files that are similar
+ls: 			lists the files in current directory.
+	### flags for 'ls'
+	-a:	 shows all files
+	-1:	 shows simple list, 
+	-l:	 shows read write capabilities of files, 
+	-rtl:	 for list by reversed time of modification long format, 
+	-h:	 for human-readable version of list, 
+	-ahrtl:	 for reverse, modified, human-readable, all list
+touch: 			create an empty file
+cd: 			change directory
+*: 			wildcard operator.
+	###Examples
+	's*' to find all the files or directories that start with 's'
+	'*.txt' to list all the files with a .txt extention
+mv:			mv to rename a file or move it to a new location
+cp:			cp to copy a file
+rm: 			to remove a file. 
+	###flags
+	-f:	 to force
+	-r:	 to remove directory
+pwd: 			print current working directory
+which: 			looks to see if a program is available at the command line
+curl: 			download a file using a web address
+!!: 			run the previous command exactly as written
+!*: 			run the previous command that starts with a certain letter or word.
+^R: 			search previous commands interactively
+head: 			shows first 10 lines of file
+tail: 			shows last 10 lines of file. 
+	###flags
+	-f:	 allows you view an actively changing file.
+wc: 			wordcount of file. From left to right, the output is lines, words, and bytes.
+|: 			pipe is used for piping the results of another command
+ping: 			sees if a server is working. The argument is a web address.
+less: 			lets you navigate through a file
 	###Commands for '/'
 	up & down arrow keys:	Move up or down one line
 	spacebar:		Move forward one page
