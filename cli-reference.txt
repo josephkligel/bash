@@ -27,7 +27,19 @@ curl: download a file using a web address
 !*: run the previous command that starts with a certain letter or word. '*' represents a letter, any letter, or a command word
 ^R: search previous commands interactively
 head: shows first 10 lines of file
-tail: shows last 10 lines of file
+tail: shows last 10 lines of file. -f allows you view an actively changing file.
 wc: wordcount of file. From left to right, the output is lines, words, and bytes.
 |: pipe is used for piping the results of another command
 ping: sees if a server is working. The argument is a web address.
+less: lets you navigate through a file
+	###Commands for '/'
+	up & down arrow keys:	Move up or down one line
+	spacebar:		Move forward one page
+	Ctrl-F:			Move forward one page
+	Ctrl-B:			Move back one page
+	G:			Move to end of file
+	1G:			Move to beginning of file
+	/<string>:		Search file for string
+	n:			Move to next search result
+	N:			Move to previous search result
+	q:			Quit less
