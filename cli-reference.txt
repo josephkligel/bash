@@ -12,7 +12,10 @@ Up/down arrow:		Scroll through previous commands
 clear or ⌃L:		Clear screen
 exit or ⌃D:		Exit terminal
 echo "str" >> <file>:	appends a string to a specified file
-echo "str" > <file>:	appends a string to a newly created file
+	###flags and commands
+	-e:	 allows you to add non-characters such as tabs
+	'\t':	 backslash 't' to add tab. example -- echo -e "\t"
+echo "str" > <file>:	redirects string to a newly created file
 diff: 			compares files that are similar
 ls: 			lists the files in current directory.
 	### flags for 'ls'
@@ -59,3 +62,10 @@ less: 			lets you navigate through a file
 	n:			Move to next search result
 	N:			Move to previous search result
 	q:			Quit less
+
+grep:			used to search for a substring in a file
+	###flags
+	-i:	for non-case sensitive searchs
+ps:			to see all the processes on the system
+	###flags
+	aux:	example -- 'ps aux | grep spring' to see all the processes			 with spring in the program name
