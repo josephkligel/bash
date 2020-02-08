@@ -14,10 +14,20 @@ exit or ⌃D:		Exit terminal
 echo "str" >> <file>:	appends a string to a specified file
 echo "str" > <file>:	appends a string to a newly created file
 diff: compares files that are similar
-ls: lists the files in current directory. -a shows all files, -1 shows simple list, -l shows read write capabilities of files, -rtl for list by reversed time of modification long format
+ls: lists the files in current directory. -a shows all files, -1 shows simple list, -l shows read write capabilities of files, -rtl for list by reversed time of modification long format, -h for human-readable version of list, -ahrtl for reverse, modified, human-readable, all list
 touch: create an empty file
 cd: change directory
 *: wildcard operator. Examples are 's*' to find all the files or directories that start with the letter s, and '*.txt' to list all the files or directories that have a .txt extention
 mv, cp: mv to rename a file or move it to a new location, and cp to copy a file
 rm: to remove a file. -f to force, -r to remove directory
 pwd: print current working directory
+which: looks to see if a program is available at the command line
+curl: download a file using a web address
+!!: run the previous command exactly as written
+!*: run the previous command that starts with a certain letter or word. '*' represents a letter, any letter, or a command word
+^R: search previous commands interactively
+head: shows first 10 lines of file
+tail: shows last 10 lines of file
+wc: wordcount of file. From left to right, the output is lines, words, and bytes.
+|: pipe is used for piping the results of another command
+ping: sees if a server is working. The argument is a web address.
