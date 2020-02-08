@@ -25,6 +25,7 @@ ls: 			lists the files in current directory.
 	-rtl:	 for list by reversed time of modification long format, 
 	-h:	 for human-readable version of list, 
 	-ahrtl:	 for reverse, modified, human-readable, all list
+	-I:	ignores a string. For example, 'ls -I "s*"' ignores all files that start with the letter s.
 touch: 			create an empty file
 cd: 			change directory
 *: 			wildcard operator.
@@ -41,7 +42,7 @@ pwd: 			print current working directory
 which: 			looks to see if a program is available at the command line
 curl: 			download a file using a web address
 !!: 			run the previous command exactly as written
-!*: 			run the previous command that starts with a certain letter or word.
+!*: 			run the previous command that starts with a certain letter or word. A number will print out the command from that line number (example: '!1983' prints 'which curl')
 ^R: 			search previous commands interactively
 head: 			shows first 10 lines of file
 tail: 			shows last 10 lines of file. 
@@ -66,6 +67,15 @@ less: 			lets you navigate through a file
 grep:			used to search for a substring in a file
 	###flags
 	-i:	for non-case sensitive searchs
+	-n:	to display the line numbers of a file
 ps:			to see all the processes on the system
 	###flags
 	aux:	example -- 'ps aux | grep spring' to see all the processes			 with spring in the program name
+kill:			eliminates an unwanted process. For example, 'kill -15 4048' kills chrome
+	###flags
+	-15:	UNIX terminate code
+pkill:			kill all the processes matching a name. For example, 'pkill -15 -f spring' kills all spring processes.
+	###flags
+	-15:	terminate code
+	-f:	force
+history:			prints the history of commands. For example, 'history | grep curl' prints out the history of 'curl' commands
