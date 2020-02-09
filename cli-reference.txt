@@ -79,3 +79,6 @@ pkill:			kill all the processes matching a name. For example, 'pkill -15 -f spri
 	-15:	terminate code
 	-f:	force
 history:			prints the history of commands. For example, 'history | grep curl' prints out the history of 'curl' commands
+find:			find files & directories
+	###examples
+	'find . -name foo*.*:	find a file that starts with foo within the current directory
