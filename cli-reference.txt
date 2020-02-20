@@ -78,6 +78,7 @@ pkill:			kill all the processes matching a name. For example, 'pkill -15 -f spri
 	###flags
 	-15:	terminate code
 	-f:	force
+<<<<<<< HEAD
 history:		prints the history of commands. For example, 'history | grep curl' prints out the history of 'curl' commands
 find:			find files & directories
 	###examples
@@ -87,3 +88,9 @@ update-alternatives:	lets you see the alternative of default programs
 	apt-alternatives --config x-terminal-emulator:	lets you see the alternative termulators installed. Hyper is current default
 curl ifconfig.me:	lookup ip address
 curl http://api.geoiplookup.net/?query=<Public_IP>:     Looksup geolocation of ip address and spits out results in html
+=======
+history:			prints the history of commands. For example, 'history | grep curl' prints out the history of 'curl' commands
+find:			find files & directories
+	###examples
+	'find . -name foo*.*:	find a file that starts with foo within the current directory
+>>>>>>> 6d242afb13a95d3a84377930682bddbfcbee8a29
