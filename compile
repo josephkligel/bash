@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "Type the wanted codename here:  " codename
+read -p "Type location or just the name of program here:  " cscript
+gcc -o $codename $cscript
+echo "<==================OUTPUT OF C PROGRAM==================>"
+echo
+~/c_programs/$codename

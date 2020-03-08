@@ -1,2 +1,2 @@
 # Linux-Programs
-Linux programs and commands
+Bash scripts for GNU/Linux
