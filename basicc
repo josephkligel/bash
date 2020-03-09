@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "#include <stdio.h>
+
+int main() {
+	
+
+	return (0);
+}" > ~/c_programs/blank.c
+nano -l ~/c_programs/blank.c

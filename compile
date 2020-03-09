@@ -2,7 +2,7 @@
 
 read -p "Type the wanted codename here:  " codename
 read -p "Type location or just the name of program here:  " cscript
-gcc -o $codename $cscript
-echo "<==================OUTPUT OF C PROGRAM==================>"
+gcc -o $codename $cscript -lm
+echo "<==================OUTPUT OF C PROGRAM using -lm option==================>"
 echo
 ~/c_programs/$codename
