@@ -7,17 +7,17 @@ man <command>:		Display manual page for command
 ⌃A:			Move to beginning of line	
 ⌃E:			Move to end of line	
 ⌃U:			Delete to beginning of line	
-Option-click:		Move cursor to location clicked	
+Alt-click:		Move cursor to location clicked	
 Up/down arrow:		Scroll through previous commands	
 clear or ⌃L:		Clear screen
 exit or ⌃D:		Exit terminal
-echo "str" >> <file>:	appends a string to a specified file
-	###flags and commands
+echo "str" >> <file>:	appends a string to an existing file
+	###options and commands
 	-e:	 allows you to add non-characters such as tabs
 	'\t':	 backslash 't' to add tab. example -- echo -e "\t"
 echo "str" > <file>:	redirects string to a newly created file
-diff: 			compares files that are similar
-ls: 			lists the files in current directory.
+diff:			compares files that are similar
+ls:			lists the files in current directory.
 	### flags for 'ls'
 	-a:	 shows all files
 	-1:	 shows simple list, 
@@ -26,32 +26,32 @@ ls: 			lists the files in current directory.
 	-h:	 for human-readable version of list, 
 	-ahrtl:	 for reverse, modified, human-readable, all list
 	-I:	ignores a string. For example, 'ls -I "s*"' ignores all files that start with the letter s.
-touch: 			create an empty file
-cd: 			change directory
-*: 			wildcard operator.
+touch:		create an empty file
+cd:		change directory
+*:		Wildcard operator.
 	###Examples
 	's*' to find all the files or directories that start with 's'
 	'*.txt' to list all the files with a .txt extention
 mv:			mv to rename a file or move it to a new location
 cp:			cp to copy a file
-rm: 			to remove a file. 
+rm:			to remove a file. 
 	###flags
 	-f:	 to force
 	-r:	 to remove directory
-pwd: 			print current working directory
-which: 			looks to see if a program is available at the command line
-curl: 			download a file using a web address
-!!: 			run the previous command exactly as written
-!*: 			run the previous command that starts with a certain letter or word. A number will print out the command from that line number (example: '!1983' prints 'which curl')
-^R: 			search previous commands interactively
-head: 			shows first 10 lines of file
-tail: 			shows last 10 lines of file. 
+pwd:			print current working directory
+which:			looks to see if a program is available at the command line
+curl:			download a file using a web address
+!!:			run the previous command exactly as written
+!*:			run the previous command that starts with a certain letter or word. A number will print out the command from that line number (example: '!1983' prints 'which curl')
+^R:			search previous commands interactively
+head:			shows first 10 lines of file
+tail:			shows last 10 lines of file. 
 	###flags
-	-f:	 allows you view an actively changing file.
-wc: 			wordcount of file. From left to right, the output is lines, words, and bytes.
-|: 			pipe is used for piping the results of another command
-ping: 			sees if a server is working. The argument is a web address.
-less: 			lets you navigate through a file
+	-f:	allows you view an actively changing file.
+wc:		wordcount of file. From left to right, the output is lines, words, and bytes.
+|:		pipe is used for piping the results of another command
+ping:		sees if a server is working. The argument is a web address.
+less:		lets you navigate through a file
 	###Commands for '/'
 	up & down arrow keys:	Move up or down one line
 	spacebar:		Move forward one page
@@ -82,9 +82,10 @@ pkill:			kill all the processes matching a name. For example, 'pkill -15 -f spri
 history:		prints the history of commands. For example, 'history | grep curl' prints out the history of 'curl' commands
 find:			find files & directories
 	###examples
-	'find . -name foo*.*:	find a file that starts with foo within the current directory
+	'find . -name foo*.*:	find a file that starts with foo within current directory
 update-alternatives:	lets you see the alternative of default programs
 	###examples
 	apt-alternatives --config x-terminal-emulator:	lets you see the alternative termulators installed. Hyper is current default
 curl ifconfig.me:	lookup ip address
 curl http://api.geoiplookup.net/?query=<Public_IP>:     Looksup geolocation of ip address and spits out results in html
+reset:			reinitializes terminal
