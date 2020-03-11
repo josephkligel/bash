@@ -3,7 +3,8 @@
  Bash Shell Scripting	8
  Python Bible		16
  Learning C		https://www.linkedin.com/learning/me/in-progress
- Web-Development	Check Udemy
+ Udemy/Web-Development	https://www.udemy.com/home/my-courses/learning/
+
 #Current todos:
  ##blog project with Nodejs
    -right align compose buttons without float
