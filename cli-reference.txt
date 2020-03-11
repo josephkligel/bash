@@ -89,3 +89,9 @@ update-alternatives:	lets you see the alternative of default programs
 curl ifconfig.me:	lookup ip address
 curl http://api.geoiplookup.net/?query=<Public_IP>:     Looksup geolocation of ip address and spits out results in html
 reset:			reinitializes terminal
+df:			Find out the available and used disk space
+	###flags
+	-H:	Human readable
+/etc/environment:	Allows you to add path variables system-wide
+/home/<usr>/.bashrc:	Allows you to custom messages on terminal. 
+			Just add a command on the first line of the file

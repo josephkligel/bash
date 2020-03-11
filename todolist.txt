@@ -1,0 +1,13 @@
+#Current Bookmarks:
+ Petition		https://my.uscis.gov/
+ Bash Shell Scripting	8
+ Python Bible		16
+ Learning C		https://www.linkedin.com/learning/me/in-progress
+ Web-Development	Check Udemy
+#Current todos:
+ ##blog project with Nodejs
+   -right align compose buttons without float
+   -Make it to where you can add posts to custom journals
+   -Make navbar dynamic with journal names/titles
+   -require request. It will help to get the hidden input, req.body $
+   -find a way to show posts

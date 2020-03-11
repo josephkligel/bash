@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ~/Downloads
-ls
+cd /home/jkligel/Downloads
+ls .
