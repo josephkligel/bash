@@ -2,6 +2,6 @@
 
 echo "#!/usr/bin/python3
 
-" > ~/python_programs/blank.py
+" > /home/jkligel/python_programs/blank.py
 
-nano -l ~/python_programs/blank.py
+nano -l /home/jkligel/python_programs/blank.py

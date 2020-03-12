@@ -4,11 +4,20 @@
  Python Bible		16
  Learning C		https://www.linkedin.com/learning/me/in-progress
  Udemy/Web-Development	https://www.udemy.com/home/my-courses/learning/
+ Silicon Valley		405
+ TNG			204
+ I Dream of Jeannie	200
 
 #Current todos:
- ##blog project with Nodejs
-   -right align compose buttons without float
-   -Make it to where you can add posts to custom journals
-   -Make navbar dynamic with journal names/titles
-   -require request. It will help to get the hidden input, req.body $
-   -find a way to show posts
+ ~~>blog project with Nodejs:
+	-right align compose buttons without float
+	-Make it to where you can add posts to custom journals
+	-Make navbar dynamic with journal names/titles
+	-require request. It will help to get the hidden input, req.body $
+	-find a way to show posts
+
+~~>Lookup/do:
+	-how to ssh with linux
+	-VA form 21-4138
+	-i130-A
+	-Make live usb of CentOS and move CentOS to exthdd
