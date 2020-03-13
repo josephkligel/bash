@@ -1,6 +1,7 @@
 # Linux-Programs
-## Bash scripts for GNU/Linux
+Bash scripts for GNU/Linux
 
+## Table of contents
 bashref.txt: This is a text reference for bash commands
 
 basicc: This is a bash script to create boilerplate C program files
