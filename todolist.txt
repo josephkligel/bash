@@ -4,7 +4,7 @@
  Python Bible		16
  Learning C		https://www.linkedin.com/learning/me/in-progress
  Udemy/Web-Development	https://www.udemy.com/home/my-courses/learning/
- Silicon Valley		405
+ Silicon Valley		502
  TNG			204
  I Dream of Jeannie	200
 
@@ -18,6 +18,5 @@
 
 ~~>Lookup/do:
 	-how to ssh with linux
-	-VA form 21-4138
 	-i130-A
 	-Make live usb of CentOS and move CentOS to exthdd
