@@ -1,6 +1,9 @@
 # Reference for UNIX Commands
 
 ## Commands
+nano:			Best editor
+	###flags
+	+16:	goes to line 16, e.g. 'nano +16 pyindex.txt'
 echo <string>:		Print string to screen
 man <command>:		Display manual page for command
 ⌃C:			Get out of trouble
@@ -12,7 +15,7 @@ Up/down arrow:		Scroll through previous commands
 clear or ⌃L:		Clear screen
 exit or ⌃D:		Exit terminal
 echo "str" >> <file>:	appends a string to an existing file
-	###options and commands
+	###flags and commands
 	-e:	 allows you to add non-characters such as tabs
 	'\t':	 backslash 't' to add tab. example -- echo -e "\t"
 echo "str" > <file>:	redirects string to a newly created file
@@ -78,7 +81,6 @@ pkill:			kill all the processes matching a name. For example, 'pkill -15 -f spri
 	###flags
 	-15:	terminate code
 	-f:	force
-<<<<<<< HEAD
 history:		prints the history of commands. For example, 'history | grep curl' prints out the history of 'curl' commands
 find:			find files & directories
 	###examples

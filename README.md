@@ -12,6 +12,8 @@ check_downloads & check_videos: script to list files and folders in certain dire
 
 compile: Script that compiles C code in an easy convenient way and then runs it, showing the output of the code below its compilation
 
+editpyIndex: Script to edit pythonIndex.txt, which stores Python references
+
 editref: Script to edit bashref.txt
 
 edittodo: Edits todolist.txt

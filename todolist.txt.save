@@ -1,4 +1,5 @@
 #Current Bookmarks:
+ Petition		https://my.uscis.gov/
  Bash Shell Scripting	8
  Python A-Z		1212
  Learning C		https://www.linkedin.com/learning/me/in-progress
@@ -8,17 +9,13 @@
  TNG			204
  I Dream of Jeannie	200
 
-#Current todos
-~~>BudgetCrud with Nodejs:
-	-Get body values from '/edit' and post them through '/update'
-	-More tasks in Todoist
+#Current todos:
+ ~~>blog project with Nodejs:
+	-redirect to home when can't find collection or something else. Use timeout
+	-add date for posts if possible
+	-fix footer
 
 ~~>Lookup/do:
 	-how to ssh with linux
+	-i130-A
 	-Make live usb of CentOS and move CentOS to exthdd
-	-How to create symbolic links in Linux
-	-Create gitref.txt
-	-Lookup ls.c in lib folder
-	-Create Python script to batch name folders for me
-		and possibly replace all spaces in filenames with underscores
-	-Webscraping	
