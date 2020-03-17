@@ -101,3 +101,5 @@ df:			Find out the available and used disk space
 	###examples
 	rm -rf ~/.local/share/Trash/*: to remove all files and folders in trash
 	
+check memory/RAM: 'free -m', 'cat /proc/meminfo'
+check CPU, RAM, and processes: 'top'

@@ -4,9 +4,10 @@
  Learning C		https://www.linkedin.com/learning/me/in-progress
  Udemy/Web-Development	https://www.udemy.com/home/my-courses/learning/
  Silicon Valley		601
- I, Claudius		101 1:12
+ I, Claudius		102
  TNG			204
  I Dream of Jeannie	200
+ Big Bang Theory	500
 
 #Current todos
 ~~>BudgetCrud with Nodejs:
@@ -14,11 +15,10 @@
 	-More tasks in Todoist
 
 ~~>Lookup/do:
-	-how to ssh with linux
 	-Make live usb of CentOS and move CentOS to exthdd
+	-how to ssh with linux
 	-How to create symbolic links in Linux
 	-Create gitref.txt
-	-Lookup ls.c in lib folder
 	-Create Python script to batch name folders for me
 		and possibly replace all spaces in filenames with underscores
 	-Webscraping	

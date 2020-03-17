@@ -8,6 +8,7 @@ basicc: This is a bash script to create boilerplate C program files
 
 basicpy: Bash script to create Python files with the Python interpreter at the top line of the file.
 	 Makes it easier to run Python programs instead of having to type 'python' before every filename
+
 check_downloads & check_videos: script to list files and folders in certain directories
 
 compile: Script that compiles C code in an easy convenient way and then runs it, showing the output of the code below its compilation
