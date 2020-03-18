@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "Type the wanted codename here:  " codename
+read -p "Type name of program here, including the 'c' extension:  " cscript
+gcc -o /home/jkligel/c_programs/$codename /home/jkligel/c_programs/source/$cscript -lm
+echo "<==================OUTPUT OF C PROGRAM w/ -lm option==================>"
+echo
+/home/jkligel/c_programs/$codename

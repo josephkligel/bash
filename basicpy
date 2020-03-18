@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "#!/usr/bin/python3
+
+" > /home/jkligel/python_programs/blank.py
+
+nano -l /home/jkligel/python_programs/blank.py

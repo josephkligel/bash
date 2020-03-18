@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nano -l /home/jkligel/python_programs/pyIndex.txt

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nano -l $HOME/bin/bashref.txt

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -p "What would you like to search for? " item
+cat /home/jkligel/bin/bashref.txt | grep $item
