@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /home/jkligel/bin/todolist.txt
+cat $HOME/Github/Programmapedia/todolist.txt
