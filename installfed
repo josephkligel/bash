@@ -17,13 +17,16 @@ sudo dnf install youtube-dl -y
 sudo dnf install simple-scan -y
 sudo dnf install mediawriter -y
 sudo dnf install libappindicator -y
+sudo dnf install xterm -y
+sudo dnf install snapd -y
+sudo ln -s /var/lib/snapd/snap /snap
 
 sudo dnf install emacs -y
 sudo dnf install gcc -y
 sudo dnf install python3 -y
 sudo dnf install nano -y
 sudo dnf install npm -y
-sudo npm i -g nodemon lodash
+sudo npm i -g nodemon lodash heroku
 sudo dnf install $(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep "https.*atom.x86_64.rpm" | cut -d '"' -f 4) -y
 sudo dnf install mysql -y
 #sudo yum install -y mongodb-org mongodb-org-server mongodb-org-shell mongodb-org-tools
