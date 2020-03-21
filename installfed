@@ -40,7 +40,7 @@ sudo echo "fastestmirror=true" >> /etc/dnf/dnf.conf
 sudo dnf copr enable kwizart/fedy
 sudo dnf install fedy -y
 
-echo "Finished. Don't forget to install Atom editor, its packages and settings, hyper.is, add message to /etc/yum.repos.d/mongodb-org-4.2.repo and uncomment line 28 to install mongodb." 
+echo "Finished. Don't forget to install hyper.is, add message to /etc/yum.repos.d/mongodb-org-4.2.repo and uncomment line 28 to install mongodb." 
 
 
 
