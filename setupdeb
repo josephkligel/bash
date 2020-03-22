@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bash ~/bin/gitClone
+bash ~/bin/installdeb

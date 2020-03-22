@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+cd ~/ && git clone https://github.com/zigjag/bash.git && mv ~/bash ~/bin
+cd ~/ && git clone https://github.com/zigjag/c_programs.git
+cd ~/ && git clone https://github.com/zigjag/python_programs.git
+mkdir ~/Github
+cd ~/Github && git clone https://github.com/zigjag/Programmapedia.git
+cd ~/Github && git clone https://github.com/zigjag/blog.git
+cd ~/Github && git clone https://github.com/zigjag/Wiki-API.git
+
+chmod +x ~/bin/*

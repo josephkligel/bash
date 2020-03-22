@@ -2,9 +2,9 @@
 
 sudo apt update
 
-sudo apt install gcc python3 node git -y
+sudo apt install dpkg curl wget gcc python3 node git -y
 sudo apt install npm -y
-sudo npm i -g nodemon lodash heroku hyper -y
+sudo npm i -g nodemon lodash heroku -y
 sudo apt install mongodb mysql -y
 sudo apt install vlc -y
 sudo apt install gnome-tweaks wine caffeine -y
@@ -17,12 +17,18 @@ sudo apt install gparted virtualbox gimp pidgin -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
 
-sudo apt-get install gdebi -y
+wget https://releases.hyper.is/download/deb
+sudo dpkg -i ./deb
+sudo apt install gdebi -y
 wget https://hyper-updates.now.sh/download/linux_deb
 sudo gdebi ./linux_deb
-hyper i hypercwd hyperpower hyper-pane hyperterm-dibdabs hyper-savetext -y
+hyper i hypercwd && hyper i hyperpower && hyper i hyper-pane && hyper i hyperterm-dibdabs && hyper i hyper-savetext
 
 sudo apt-get install gnome-shell -y
 sudo apt-get install ubuntu-gnome-desktop -y
+
+echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+sudo apt-get install balena-etcher-electron
 
 bash $HOME/bin/updatedeb
