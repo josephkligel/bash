@@ -1,0 +1,27 @@
+#!/bin/bash
+
+sudo apt update
+
+sudo apt install gcc python3 node -y 
+sudo apt install npm -y
+sudo npm i -g nodemon lodash -y
+sudo apt install mongodb -y
+sudo apt install vlc -y
+sudo apt install gnome-tweaks wine spotify -y
+sudo apt install nano emacs nautilus xterm -y
+sudo apt install snapd -y
+sudo snap install atom --classic
+sudo apt install qbittorrent calibre 7zip unzip -y
+sudo apt install gparted virtualbox gimp pidgin -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
+
+sudo apt-get install gdebi -y
+wget https://hyper-updates.now.sh/download/linux_deb
+sudo gdebi linux_deb -y
+hyper i hypercwd hyperpower hyper-pane hyperterm-dibdabs hyper-savetext -y #check
+
+sudo apt-get install gnome-shell -y
+sudo apt-get install ubuntu-gnome-desktop -y
+
+bash $HOME/bin/updatedeb

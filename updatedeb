@@ -1,12 +1,11 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt full-upgrade -y
+sudo apt dist-upgrade -y
 sudo apt autoremove -y
-sudo apt autoclean
+sudo apt autoclean -y
 sudo updatedb
-date >> ~/bin/update.log
-echo
+date >> $HOME/update.log
 echo
 echo
 echo
