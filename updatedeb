@@ -5,7 +5,7 @@ sudo apt dist-upgrade -y
 sudo apt autoremove -y
 sudo apt autoclean -y
 sudo updatedb
-date >> $HOME/update.log
+date >> $HOME/Desktop/update.log
 echo
 echo
 echo

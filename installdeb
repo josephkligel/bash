@@ -5,9 +5,9 @@ sudo apt update
 sudo apt install dpkg curl wget gcc python3 node git -y
 sudo apt install npm -y
 sudo npm i -g nodemon lodash heroku -y
-sudo apt install mongodb mysql -y
-sudo apt install vlc -y
-sudo apt install gnome-tweaks wine caffeine -y
+sudo apt install mongodb mongodb-clients mongodb-server-core mysql-server -y
+sudo apt install vlc audacious skype uget dropbox -y
+sudo apt install gnome-tweaks wine caffeine libreoffice gimp -y
 sudo apt install nano emacs nautilus xterm -y
 sudo apt install snapd -y
 sudo snap install atom --classic
