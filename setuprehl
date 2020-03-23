@@ -1,0 +1,8 @@
+#!/bin/bash
+
+bash ~/bin/gitClone
+bash ~/bin/installrehl
+bash ~/bin/updaterehl
+echo
+echo
+echo Setup for REHL distro is complete
