@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo <================================>Packages Managers and Configs<==============================>
+echo "<================================>Packages Managers and Configs<==============================>"
 sudo yum update
 sudo echo "fastestmirror=true" >> /etc/yum/yum.conf
 sudo yum config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
 sudo yum install snapd -y
 sudo ln -s /var/lib/snapd/snap /snap
 
-echo <================================>Apps<==============================>
+echo "<================================>Apps<==============================>"
 sudo yum install vlc steam -y
 sudo yum install unzip icedtea-web java-openjdk -y
 sudo yum install gimp pidgin qbittorrent pidgin spotify-client -y
@@ -17,7 +17,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 sudo yum install ./google-chrome-stable_current_*.rpm
 google-chrome
 
-echo <================================>Programming<==============================>
+echo "<================================>Programming<==============================>"
 wget https://releases.hyper.is/download/rpm
 sudo yum install rpm -y
 sudo yum install gcc python python3 emacs git nano -y
@@ -28,7 +28,7 @@ sudo yum install $(curl -sL "https://api.github.com/repos/atom/atom/releases/lat
 sudo yum install mysql -y
 sudo yum install -y mongodb-org mongodb-org-server mongodb-org-shell mongodb-org-tools
 
-echo "Finished. Don't forget to install chrome, hyper.is, add message to /etc/yum.repos.d/mongodb-org-4.2.repo" 
+echo "Finished. Don't forget hyper.is and to add a message to /etc/yum.repos.d/mongodb-org-4.2.repo" 
 
 
 

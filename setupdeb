@@ -2,3 +2,7 @@
 
 bash ~/bin/gitClone
 bash ~/bin/installdeb
+bash ~/bin/updatedeb
+echo
+echo
+echo "Setup for Debian distro is complete"
