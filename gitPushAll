@@ -2,4 +2,6 @@
 git config --global user.email "jkligel@gmail.com"
 git config --global user.name "Joseph Kligel"
 
-git add . && git commit -m "Using bash script to push all updates" && git push -u origin master 
+git add . --all 
+git commit -m "Using bash script to push all updates" 
+git push -u origin master 
