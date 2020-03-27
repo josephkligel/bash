@@ -8,5 +8,4 @@ sudo updatedb
 date >> $HOME/Desktop/update.log
 echo
 echo
-echo
 echo "Done updating"
