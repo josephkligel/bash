@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp ~/.hyper.js ~/config/
