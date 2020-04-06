@@ -1,0 +1,12 @@
+#!/bin/bash
+
+bash ~/bash/gitClone
+bash ~/bin/installfed
+
+sudo dnf check-update
+sudo dnf update
+sudo dnf upgrade -y
+sudo updatedb
+bash ~/bin/updaterehl
+
+sudo visudo

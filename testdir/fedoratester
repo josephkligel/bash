@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "----------Clone Phase------------"
+sudo dnf install nano git emacs -y
+cd $HOME/; git clone https://github.com/zigjag/bash.git
+cd; mv ~/bash ~/bin
+git clone https://github.com/zigjag/c_programs.git
+git clone https://github.com/zigjag/python_programs.git
+git clone https://github.com/zigjag/config.git
+mkdir ~/Github; cd ~/Github; git clone https://github.com/zigjag/Programmapedia.git; git clone https://github.com/zigjag/Wiki-API.git
+
+echo "----------Installing Apps-----------"
+bash ~/bin/installfed
+sudo dnf update; sudo dnf upgrade -y; sudo updatedb
+
+
+echo "----------Setup-----------"
+sudo echo "jkligel ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers.tmp
+cat /etc/sudoers.tmp
+cp ~/config/hyper.css ~/

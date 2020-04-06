@@ -29,7 +29,7 @@ sudo dnf install npm -y
 sudo npm i -g nodemon lodash heroku
 sudo dnf install $(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep "https.*atom.x86_64.rpm" | cut -d '"' -f 4) -y
 sudo dnf install mysql -y
-#sudo yum install -y mongodb-org mongodb-org-server mongodb-org-shell mongodb-org-tools
+sudo yum install -y mongodb-org mongodb-org-server mongodb-org-shell mongodb-org-tools
 sudo dnf install node -y
 
 sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y

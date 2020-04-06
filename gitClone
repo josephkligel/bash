@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~/
-git clone https://github.com/zigjag/bash.git && mv ~/bash ~/bin
+mv ~/bash ~/bin
 git clone https://github.com/zigjag/c_programs.git
 git clone https://github.com/zigjag/python_programs.git
 git clone https://github.com/zigjag/config.git
@@ -11,6 +11,7 @@ git clone https://github.com/zigjag/Programmapedia.git
 git clone https://github.com/zigjag/Wiki-API.git
 git clone https://github.com/zigjag/budgetCrud.git
 
-chmod +x ~/bin/* ~/python_programs/*
+chmod +x ~/bin/* ~/python_programs/* ~/c_programs
+sudo sed -i "1\i\bash ~/bin/copyConfig" /etc/profile
 sudo sed -i "1 \i\bash ~/bin/todo" /etc/profile
 sudo sed -i "$a export PATH=$PATH:$HOME/bin:$HOME/c_programs:$HOME/python_programs" /etc/profile
