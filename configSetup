@@ -1,0 +1,8 @@
+#!/bin/bash
+
+chmod +x ~/bin/* ~/python_programs/* ~/c_programs/*
+sudo sed -i "1i\bash ~/bin/copyConfig" /etc/profile
+sudo sed -i "1i\bash ~/bin/todo" /etc/profile
+sudo sed -i "\$a export PATH=$PATH:$HOME/bin:$HOME/c_programs:$HOME/python_programs" /etc/profile
+sudo cp ~/config/.hyper.js ~/
+#sudo sed -i "\$a bind -x "\C-g":$HOME/python_programs/gitPushall.py""
