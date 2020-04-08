@@ -3,4 +3,5 @@
 sudo dnf update -y
 sudo dnf check-update -y
 sudo dnf upgrade -y
+bash ~/bin/updaterehl
 sudo updatedb
