@@ -1,4 +1,4 @@
 #!/bin/bash
 
 read -p "What would you like to search for? " item
-cat $HOME/Github/Programmapedia/bashref.txt | grep $item
+cat $HOME/Github/Programmapedia/bashref.txt | grep -i $item
