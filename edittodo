@@ -1,3 +1,4 @@
 #!/bin/bash
 
-nano -l $HOME/Github/Programmapedia/todolist.txt
+nano -l $HOME/Github/Programmapedia/todolist.md
+
