@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nano -l $HOME/Github/Programmapedia/bashref.txt
+nano -l /home/$USER/Github/Programmapedia/bashref.md

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-bash ~/bin/gitClone
-bash ~/bin/installrehl
-bash ~/bin/updaterehl
+bash /home/$USER/bin/gitClone
+bash /home/$USER/bin/installrehl
+bash /home/$USER/bin/updaterehl
 echo
 echo
-echo Setup for REHL distro is complete
+echo 'Setup for REHL distro is complete'

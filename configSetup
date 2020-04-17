@@ -1,9 +1,9 @@
 #!/bin/bash
 
-chmod +x ~/bin/* ~/python_programs/* ~/c_programs/*
-sudo sed -i "1i\bash ~/bin/copyConfig" /etc/profile
-sudo sed -i "1i\bash ~/bin/todo" $HOME/.bashrc
-sudo sed -i "\$a export PATH=$PATH:$HOME/bin:$HOME/c_programs:$HOME/python_programs" $HOME/.bashrc
-sudo cp ~/config/.hyper.js ~/
-sudo sed -i "bind -x '"\C-g":$HOME/python_programs/gitPushAll.py'" $HOME/.bashrc
-sudo sed -i "\$a alias gpa='python $HOME/python_programs/gitPushAll.py'" $HOME/.bashrc
+chmod +x /home/$USER/bin/* /home/$USER/python_programs/* /home/$USER/c_programs/*
+sudo sed -i "1i\bash /home/$USER/bin/copyConfig" /etc/profile
+sudo sed -i "1i\bash /home/$USER/bin/todo" /home/$USER/.bashrc
+sudo sed -i "\$a export PATH=$PATH:/home/$USER/bin:/home/$USER/c_programs:/home/$USER/python_programs" /etc/bashrc
+sudo cp /home/$USER/config/.hyper.js /home/$USER/
+sudo sed -i "\$a alias gpa='python /home/$USER/python_programs/gitPushAll.py'" /etc/bashrc
+echo '>>>>>>>>>>>>Config Setup is done<<<<<<<<<<<<<'

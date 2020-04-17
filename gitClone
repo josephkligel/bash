@@ -1,14 +1,14 @@
 #!/bin/bash
 
-cd ~/
-mv ~/bash ~/bin
+cd /home/$USER/
+mv /home/$USER/bash /home/$USER/bin
 git clone https://github.com/zigjag/c_programs.git
 git clone https://github.com/zigjag/python_programs.git
 git clone https://github.com/zigjag/config.git
 
-mkdir ~/Github; cd ~/Github
+mkdir /home/$USER/Github; cd /home/$USER/Github
 git clone https://github.com/zigjag/Programmapedia.git
 git clone https://github.com/zigjag/Wiki-API.git
 git clone https://github.com/zigjag/budgetCrud.git
 
-bash ~/bin/configSetup
+bash /home/$USER/bin/configSetup

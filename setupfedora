@@ -1,12 +1,8 @@
 #!/bin/bash
 
-bash ~/bash/gitClone
-bash ~/bin/installfed
-
-sudo dnf check-update
-sudo dnf update
-sudo dnf upgrade -y
-sudo updatedb
-bash ~/bin/updaterehl
-
-sudo visudo
+bash /home/$USER/bash/gitClone
+bash /home/$USER/bin/installfed
+bash /home/$USER/bin/updatefedora
+echo
+echo
+echo 'Setup for Fedora is complete'

@@ -29,7 +29,7 @@ sudo yum install $(curl -sL "https://api.github.com/repos/atom/atom/releases/lat
 sudo yum install mysql -y
 sudo yum install -y mongodb-org mongodb-org-server mongodb-org-shell mongodb-org-tools
 
-echo "Finished. Don't forget hyper.is and to add a message to /etc/yum.repos.d/mongodb-org-4.2.repo" 
+echo "Finished. Don't forget to add a message to /etc/yum.repos.d/mongodb-org-4.2.repo" 
 
 
 
