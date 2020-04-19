@@ -3,7 +3,7 @@
 sudo dnf update -y
 sudo dnf check-update -y
 sudo dnf upgrade -y
-bash /home/$USER/bin/updaterehl
 sudo updatedb
+bash /home/$USER/bin/updaterehl
 date >> /home/$USER/Desktop/manual_update.log
 
