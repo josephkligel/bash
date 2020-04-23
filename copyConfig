@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp ~/.hyper.js ~/config/
-cp ~/.bashrc ~/config/
+cp /home/$USER/.bashrc /home/$USER/config/
+sudo cp /etc/profile /etc/bashrc /home/$USER/config/
