@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "#!/usr/bin/python3
+echo "#!/usr/bin/env python3" > /home/jkligel/python_programs/blank.py
 
-" > /home/jkligel/python_programs/blank.py
-
-nano -l /home/jkligel/python_programs/blank.py
+vim /home/jkligel/python_programs/blank.py

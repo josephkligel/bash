@@ -7,4 +7,4 @@ int main() {
 
 	return (0);
 }" > /home/jkligel/c_programs/source/blank.c
-nano -l ~/c_programs/source/blank.c
+vim ~/c_programs/source/blank.c
