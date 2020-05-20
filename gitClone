@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir /home/$USER/logs #used for storing user logs
+
 cd /home/$USER/
 mv /home/$USER/bash /home/$USER/bin
 git clone https://github.com/zigjag/c_programs.git

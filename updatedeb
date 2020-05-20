@@ -5,7 +5,7 @@ sudo apt dist-upgrade -y
 sudo apt autoremove -y
 sudo apt autoclean -y
 sudo updatedb
-date >> /home/$USER/Desktop/bash_command_update.log
+date >> /home/$USER/logs/bash_command_update.log
 echo
 echo
 echo "Done updating"

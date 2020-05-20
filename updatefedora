@@ -5,5 +5,5 @@ sudo dnf check-update -y
 sudo dnf upgrade -y
 sudo updatedb
 bash /home/$USER/bin/updaterehl
-date >> /home/$USER/Desktop/manual_update.log
+date >> /home/$USER/logs/manual_update.log
 

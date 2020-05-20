@@ -4,5 +4,5 @@ sudo yum check-update -y
 sudo yum update -y
 sudo yum upgrade -y
 sudo updatedb
-date >> /home/$USER/Desktop/manual_update.log
+date >> /home/$USER/logs/manual_update.log
 
