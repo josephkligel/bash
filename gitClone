@@ -6,6 +6,7 @@ cd /home/$USER/
 mv /home/$USER/bash /home/$USER/bin
 git clone https://github.com/zigjag/c_programs.git
 git clone https://github.com/zigjag/python_programs.git
+git clone https://github.com/zigjag/node.git
 git clone https://github.com/zigjag/config.git
 
 mkdir /home/$USER/Github; cd /home/$USER/Github
