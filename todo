@@ -1,2 +1,3 @@
 #!/bin/bash
+time.py
 cat /home/$USER/Github/Programmapedia/todolist.md
