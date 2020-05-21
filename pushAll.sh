@@ -1,4 +1,5 @@
 #!/bin/bash
+git config --global credential.helper 'cache --timeout 7200'
 
 cd /home/$USER/bin; bash gitPush
 cd /home/$USER/cv; bash gitPush
