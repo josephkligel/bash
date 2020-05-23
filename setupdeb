@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash /home/$USER/bin/gitClone
+bash /home/$USER/bash/gitClone
 bash /home/$USER/bin/installdeb
 bash /home/$USER/bin/updatedeb
 echo
