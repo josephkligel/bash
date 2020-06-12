@@ -7,9 +7,9 @@ cd /home/$USER/python_programs; bash gitPush
 cd /home/$USER/c_programs; bash gitPush
 cd /home/$USER/node; bash gitPush
 cd /home/$USER/config; bash gitPush
-cd /home/$USER/TetrisJS; bash gitPush
 cd /home/$USER/electron; bash gitPush
 cd /home/$USER/practice_python; bash gitPush
+cd /home/$USER/GamesJS; bash gitPush
 
 cd /home/$USER/Github/Programmapedia; bash gitPush
 cd /home/$USER/Github/budgetCrud; bash gitPush
