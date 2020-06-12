@@ -10,6 +10,7 @@ cd /home/$USER/config; bash gitPush
 cd /home/$USER/electron; bash gitPush
 cd /home/$USER/practice_python; bash gitPush
 cd /home/$USER/GamesJS; bash gitPush
+cd /home/$USER/AI_py; bash gitPush
 
 cd /home/$USER/Github/Programmapedia; bash gitPush
 cd /home/$USER/Github/budgetCrud; bash gitPush
