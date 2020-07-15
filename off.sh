@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-pushAll.sh
+bash gitpy --push
 updatefedora
 sudo poweroff
