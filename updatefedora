@@ -4,6 +4,6 @@ sudo dnf update -y
 sudo dnf check-update -y
 sudo dnf upgrade -y
 sudo updatedb
-bash /home/$USER/bin/updaterehl
-date >> /home/$USER/logs/manual_update.log
+bash $HOME/Github/bin/updaterehl
+date >> $HOME/logs/manual_update.log
 
