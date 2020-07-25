@@ -5,12 +5,10 @@ OS_INFO=$(cat /etc/*-release)
 case $OS_INFO in
 
 	*"Fedora"*)
-	python /home/jkligel/Github/python_programs/gitpy/gitpy.py --push
-	updatefedora
-	sudo poweroff
+	bash $HOME/Github/bash/	
 	;;
 
-	*"CentOS"*)
+	*"Centos"*)
 	python /home/jkligel/Github/python_programs/gitpy/gitpy.py --push
 	updaterehl
 	sudo poweroff
