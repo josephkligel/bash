@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "#include <iostream>
+using namespace std;
+
+int main() {
+	
+
+	return (0);
+}" > /home/jkligel/cpp_programs/basiccpp.cpp
+vim ~/cpp_programs/basiccpp.cpp

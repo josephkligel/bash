@@ -11,25 +11,25 @@ case $OS_INFO in
 	*"Fedora"*)
 	push_git_repos
 	bash updateLinux.sh
-	sudo poweroff
+	sudo restart
 	;;
 
 	*"CentOS"*)
 	push_git_repos
 	bash updateLinux.sh
-	sudo poweroff
+	sudo restart
 	;;	
 
 	*"Manjaro"*)
 	push_git_repos
 	bash updateLinux.sh
-	sudo poweroff
+	sudo restart
 	;;
 
 	*"Debian"*)
 	push_git_repos
 	bash updateLinux.sh
-	sudo poweroff
+	sudo restart
 	;;	
 
 	*)
