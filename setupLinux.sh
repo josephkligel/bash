@@ -1,32 +1,44 @@
 #!/usr/bin/env bash
 
+clone_git_repos(){
+	python3 $HOME/Github/python_programs/gitpy/gitpy --clone
+}
+
 OS_INFO=$(cat /etc/*-release)
 
 case $OS_INFO in
 
 	*"Fedora"*)
-	bash $HOME/Github/bash/	
+	clone_git_repos
+	bash installfed
+	bash updateLinux.sh	
 	;;
 
-	*"Centos"*)
-	python /home/jkligel/Github/python_programs/gitpy/gitpy.py --push
-	updaterehl
-	sudo poweroff
+	*"CentOS"*)
+	clone_git_repos
+	bash installrehl
+	bash updateLinux.sh
 	;;	
 
 	*"Manjaro"*)
-	python /home/jkligel/Github/python_programs/gitpy/gitpy.py --push
-	sudo pacman -Syyu
-	sudo poweroff
+	clone_git_repos
+	bash installarch
+	bash updateLinux.sh	
 	;;
 
 	*"Debian"*)
-	python /home/jkligel/Github/python_programs/gitpy/gitpy.py --push
-	updatedeb
-	sudo poweroff
-	;;	
+	clone_git_repos
+	bash installdeb
+	bash updateLinux.sh
+	;;
+
+	*"Arch"*)
+	clone_git_repos
+	bash installarch
+	bash updateLinux.sh	
+	;;
 
 	*)
-	echo "Nothing was done"
+	echo "Could not detect operating system"
 	;;
 esac
