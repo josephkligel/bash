@@ -26,7 +26,7 @@ case $OS_INFO in
 	sudo poweroff
 	;;
 
-	*"Debian"*)
+	*"Ubuntu"*)
 	push_git_repos
 	bash updateLinux.sh
 	sudo poweroff
