@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source /etc/os-release
 OS_INFO=$NAME
 
