@@ -4,7 +4,8 @@ clone_git_repos(){
 	python3 $HOME/Github/python_programs/gitpy/gitpy --clone
 }
 
-OS_INFO=$(cat /etc/*-release)
+source /etc/os-release
+OS_INFO=$NAME
 
 case $OS_INFO in
 

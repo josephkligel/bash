@@ -1,4 +1,5 @@
-OS_INFO=$(cat /etc/*-release)
+source /etc/os-release
+OS_INFO=$NAME
 
 create_log(){
 	if [[ -d $HOME/logs  ]]; then
