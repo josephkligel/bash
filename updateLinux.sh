@@ -42,7 +42,7 @@ case $OS_INFO in
 	finish_update
 	;;
 
-	*"Debian"*)
+	*"Ubuntu"*)
 	sudo apt update
 	sudo apt dist-upgrade -y
 	sudo apt autoremove -y
