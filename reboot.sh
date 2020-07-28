@@ -27,7 +27,7 @@ case $OS_INFO in
 	sudo reboot
 	;;
 
-	*"Debian"*)
+	*"Ubuntu"*)
 	push_git_repos
 	bash updateLinux.sh
 	sudo reboot
