@@ -7,5 +7,5 @@ int main() {
 	
 
 	return (0);
-}" > /home/jkligel/cpp_programs/basiccpp.cpp
-vim ~/cpp_programs/basiccpp.cpp
+}" > ./basiccpp.cpp
+vim ./basiccpp.cpp

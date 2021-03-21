@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "#!/usr/bin/env python3" > /home/jkligel/python_programs/blank.py
-
-vim /home/jkligel/python_programs/blank.py
