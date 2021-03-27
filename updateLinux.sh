@@ -5,8 +5,9 @@ OS_INFO=$NAME
 
 create_log(){
 	if [[ -d $HOME/logs  ]]; then
-		echo "Logs directory already exists."
+		echo ""
 	else
+		echo "Creating logs directory in home folder..."
 		mkdir $HOME/logs
 	fi
 }
@@ -17,7 +18,6 @@ update_arch(){
 
 finish_update(){
 	sudo updatedb
-	echo
 	echo
 	echo "~~~~~~ Done updating ~~~~~~"
 }
