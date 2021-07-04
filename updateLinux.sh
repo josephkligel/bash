@@ -25,24 +25,24 @@ finish_update(){
 case $OS_INFO in
 
 	*"Fedora"*)
-	sudo yum check-update -y
-	sudo yum update -y
-	sudo yum upgrade -y
+	sudo dnf check-update -y
+	sudo dnf update -y
+	sudo dnf upgrade -y
 	create_log
 	date >> $HOME/logs/Fedora_update.log
 	finish_update
 	;;
 
 	*"CentOS"*)
-	sudo dnf check-update -y
-	sudo dnf update -y
-	sudo dnf upgrade -y
+	sudo yum check-update -y
+	sudo yum update -y
+	sudo yum upgrade -y
 	create_log
 	date >> $HOME/logs/CentOS_update.log
 	finish_update
 	;;
 
-	*"Ubuntu"*)
+	*"Ubuntu"*|*"Elementary"*)
 	sudo apt update
 	sudo apt dist-upgrade -y
 	sudo apt autoremove -y

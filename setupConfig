@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [[ ! -f /etc/profile.d/custom.sh  ]]; then
-	sudo cp $HOME/Github/config/copy_custom.sh /etc/profile.d/custom.sh
-	source /etc/profile.d/custom.sh
-else
-	echo "custom.sh already exists"
-fi
