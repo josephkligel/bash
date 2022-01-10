@@ -1,8 +1,0 @@
-#!/bin/bash
-
-bash /home/$USER/bash/gitClone
-bash /home/$USER/bin/installfed
-bash /home/$USER/bin/updatefedora
-echo
-echo
-echo 'Setup for Fedora is complete'

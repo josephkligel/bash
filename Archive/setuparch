@@ -1,8 +1,0 @@
-#!/bin/bash
-
-bash /home/$USER/bash/gitClone
-bash /home/$USER/bin/installarch
-bash /home/$USER/bin/updatearch
-echo
-echo
-echo 'Setup for Arch distro is complete'

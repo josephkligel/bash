@@ -1,9 +1,0 @@
-#!/bin/bash
-
-sudo dnf update -y
-sudo dnf check-update -y
-sudo dnf upgrade -y
-sudo updatedb
-bash $HOME/Github/bin/updaterehl
-date >> $HOME/logs/manual_update.log
-

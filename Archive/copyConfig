@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cp /home/$USER/.bashrc /home/$USER/config/
-sudo cp /etc/profile /etc/bashrc /home/$USER/config/

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-vim -N /home/$USER/Github/Programmapedia/todolist.md
-

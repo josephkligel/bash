@@ -1,8 +1,0 @@
-#!/bin/bash
-
-bash $HOME/Github/bash/gitClone
-bash $HOME/Github/bin/installrehl
-bash $HOME/Github/bin/updaterehl
-echo
-echo
-echo 'Setup for REHL distro is complete'

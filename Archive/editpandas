@@ -1,3 +1,0 @@
-#!/bin/bash
-
-vim /home/$USER/Github/Programmapedia/PyGuides/pandas.md

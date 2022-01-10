@@ -1,8 +1,0 @@
-#!/bin/bash
-
-bash /home/$USER/bash/gitClone
-bash /home/$USER/bin/installdeb
-bash /home/$USER/bin/updatedeb
-echo
-echo
-echo "Setup for Debian distro is complete"
