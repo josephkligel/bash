@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 push_git_repos(){
-	python3 $HOME/Github/python_programs/gitpy/gitpy.py --push
+	python3 $HOME/Github/python_programs/GitProject/main.py push
 }
 
 source /etc/os-release
