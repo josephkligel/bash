@@ -29,7 +29,7 @@ case $OS_INFO in
 	sudo dnf update -y
 	sudo dnf upgrade -y
 	create_log
-	date >> $HOME/logs/Fedora_update.log
+	date >> $HOME/logs/Fedora_updates.log
 	finish_update
 	;;
 
@@ -38,7 +38,7 @@ case $OS_INFO in
 	sudo yum update -y
 	sudo yum upgrade -y
 	create_log
-	date >> $HOME/logs/CentOS_update.log
+	date >> $HOME/logs/CentOS_updates.log
 	finish_update
 	;;
 
@@ -48,21 +48,21 @@ case $OS_INFO in
 	sudo apt autoremove -y
 	sudo apt autoclean -y
 	create_log
-	date >> $HOME/logs/Debian_update.log
+	date >> $HOME/logs/Debian_updates.log
 	finish_update
 	;;
 
 	*"Manjaro"*)
 	update_arch
 	create_log
-	date >> $HOME/logs/Manjaro_update.log
+	date >> $HOME/logs/Manjaro_updates.log
 	finish_update
 	;;
 
 	*"Arch"*)
 	update_arch
 	create_log
-	date >> $HOME/logs/Arch_update.log
+	date >> $HOME/logs/Arch_updates.log
 	finish_update
 	;;
 
