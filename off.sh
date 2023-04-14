@@ -10,7 +10,7 @@ push_git_repos(){
 
 powerdown(){
 	echo "Powering off..."
-	#sudo poweroff
+	sudo poweroff
 }
 
 backup_custom(){
@@ -24,12 +24,17 @@ bash updateLinux.sh
 
 # Step 2: execute options
 
-while getopts ":bp" option; do
+while getopts ":bpa" option; do
 	case $option in
 		b)
 			backup_custom
 			;;
 		p)
+			push_git_repos
+			;;
+		a)
+			Echo "Performing all options"
+			backup_custom
 			push_git_repos
 			;;
 	esac
