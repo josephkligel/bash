@@ -2,25 +2,34 @@
 
 source /etc/os-release
 OS_INFO=$NAME
+UPDATELOG=/var/log/user-updates.log
+MESSAGE="$(date): $USER updated"
 
 create_log(){
-	if [[ -d $HOME/logs  ]]; then
-		echo ""
+	if [[ -f $UPDATELOG ]];
+	then
+		sudo chmod 666 $UPDATELOG
 	else
-		echo "Creating logs directory in home folder..."
-		mkdir $HOME/logs
+		sudo touch $UPDATELOG
+		sudo chmod 666 $UPDATELOG	
 	fi
 }
 
-update_arch(){
-	sudo pacman -Syyu
+append_log(){
+	echo "$MESSAGE" >> $UPDATELOG
 }
 
 finish_update(){
 	sudo updatedb
-	echo
-	echo "~~~~~~ Done updating ~~~~~~"
+	printf "\n-------------- Done Updating --------------\n\n" 
 }
+
+# Step 1. Create log
+create_log
+
+# Step 2. Check OS distribution, update the system using the corresponding
+# package manager, upgrade if possible, append update log
+# and print a finish update message to the console
 
 case $OS_INFO in
 
@@ -28,8 +37,7 @@ case $OS_INFO in
 	sudo dnf check-update -y
 	sudo dnf update -y
 	sudo dnf upgrade -y
-	create_log
-	date >> $HOME/logs/Fedora_updates.log
+	append_log
 	finish_update
 	;;
 
@@ -37,8 +45,7 @@ case $OS_INFO in
 	sudo yum check-update -y
 	sudo yum update -y
 	sudo yum upgrade -y
-	create_log
-	date >> $HOME/logs/CentOS_updates.log
+	append_log
 	finish_update
 	;;
 
@@ -47,22 +54,13 @@ case $OS_INFO in
 	sudo apt dist-upgrade -y
 	sudo apt autoremove -y
 	sudo apt autoclean -y
-	create_log
-	date >> $HOME/logs/Debian_updates.log
+	append_log
 	finish_update
 	;;
 
-	*"Manjaro"*)
-	update_arch
-	create_log
-	date >> $HOME/logs/Manjaro_updates.log
-	finish_update
-	;;
-
-	*"Arch"*)
-	update_arch
-	create_log
-	date >> $HOME/logs/Arch_updates.log
+	*"Arch"*|*"Manjaro"*)
+	sudo pacman -Syuu
+	append_log
 	finish_update
 	;;
 
