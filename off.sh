@@ -1,43 +1,39 @@
 #!/usr/bin/env bash
 
-push_git_repos(){
-	python3 $HOME/Github/python_programs/GitProject/main.py push
-}
-
 source /etc/os-release
 OS_INFO=$NAME
 
-case $OS_INFO in
+push_git_repos(){
+	echo "Pushing all git repos remotely..."
+	python3 $HOME/GitHub/python_programs/GitProject/main.py push
+}
 
-	*"Fedora"*)
-	push_git_repos
-	bash updateLinux.sh
-	bash backup_custom.sh
-	sudo poweroff
-	;;
+powerdown(){
+	echo "Powering off..."
+	#sudo poweroff
+}
 
-	*"CentOS"*)
-	push_git_repos
-	bash updateLinux.sh
-	bash backup_custom.sh
-	sudo poweroff
-	;;	
+backup_custom(){
+	echo "Backing up custom.sh from /etc/profile.d/..."
+	bash backup-custom-script.sh
+}
 
-	*"Manjaro"*)
-	push_git_repos
-	bash updateLinux.sh
-	bash backup_config.sh
-	sudo poweroff
-	;;
+# Step 1: Update Linux
 
-	*"Ubuntu"*|*"Elementary"*)
-	push_git_repos
-	bash updateLinux.sh
-	bash backup_config.sh
-	sudo poweroff
-	;;	
+bash updateLinux.sh
 
-	*)
-	echo "OS could not be detected"
-	;;
-esac
+# Step 2: execute options
+
+while getopts ":bp" option; do
+	case $option in
+		b)
+			backup_custom
+			;;
+		p)
+			push_git_repos
+			;;
+	esac
+done
+
+# Step 3: Power off
+	powerdown
