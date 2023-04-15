@@ -33,9 +33,12 @@ while getopts ":bpa" option; do
 			push_git_repos
 			;;
 		a)
-			Echo "Performing all options"
+			echo "Performing all options"
 			backup_custom
 			push_git_repos
+			;;
+		*)
+			echo "Default value"
 			;;
 	esac
 done
