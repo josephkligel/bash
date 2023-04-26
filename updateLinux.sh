@@ -20,7 +20,6 @@ append_log(){
 }
 
 finish_update(){
-	sudo updatedb
 	printf "\n-------------- Done Updating --------------\n\n" 
 }
 
