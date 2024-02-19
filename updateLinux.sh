@@ -48,7 +48,7 @@ case $OS_INFO in
 	finish_update
 	;;
 
-	*"Ubuntu"*|*"Elementary"*)
+	*"Debian"*|*"Ubuntu"*|*"Elementary"*)
 	sudo apt update
 	sudo apt dist-upgrade -y
 	sudo apt autoremove -y
